@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index,name='index'),
     path("trips",views.trips,name="trips"),
+    path("gallery",views.gallary,name="gallery")
        
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
